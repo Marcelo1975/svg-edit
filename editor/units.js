@@ -1,11 +1,3 @@
-/**
- * Tools for working with units.
- * @module units
- * @license MIT
- *
- * @copyright 2010 Alexis Deveria, 2010 Jeff Schiller
- */
-
 import {NS} from './namespaces.js';
 import {isNullish} from './utilities.js';
 

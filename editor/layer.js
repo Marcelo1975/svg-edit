@@ -2,9 +2,6 @@
 /**
  * Provides tools for the layer concept.
  * @module layer
- * @license MIT
- *
- * @copyright 2011 Jeff Schiller, 2016 Flint O'Brien
  */
 
 import {NS} from './namespaces.js';

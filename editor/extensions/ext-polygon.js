@@ -1,10 +1,3 @@
-/**
- * @file ext-polygon.js
- *
- *
- * @copyright 2010 CloudCanvas, Inc. All rights reserved
- *
- */
 export default {
   name: 'polygon',
   async init (S) {

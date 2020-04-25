@@ -1,10 +1,3 @@
-/**
- * @file ext-placemark.js
- *
- *
- * @copyright 2010 CloudCanvas, Inc. All rights reserved
- *
- */
 export default {
   name: 'placemark',
   async init (S) {

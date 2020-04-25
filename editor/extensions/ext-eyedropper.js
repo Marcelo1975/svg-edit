@@ -1,12 +1,3 @@
-/**
- * @file ext-eyedropper.js
- *
- * @license MIT
- *
- * @copyright 2010 Jeff Schiller
- *
- */
-
 export default {
   name: 'eyedropper',
   async init (S) {

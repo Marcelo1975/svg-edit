@@ -1,14 +1,3 @@
-/**
- * @file ext-panning.js
- *
- * @license MIT
- *
- * @copyright 2013 Luis Aguirre
- *
- */
-/*
-  This is a very basic SVG-Edit extension to let tablet/mobile devices pan without problem
-*/
 export default {
   name: 'panning',
   async init ({importLocale}) {

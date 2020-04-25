@@ -1,13 +1,3 @@
-/* eslint-disable unicorn/no-fn-reference-in-iterator */
-/**
- * @file ext-connector.js
- *
- * @license MIT
- *
- * @copyright 2010 Alexis Deveria
- *
- */
-
 export default {
   name: 'connector',
   async init (S) {

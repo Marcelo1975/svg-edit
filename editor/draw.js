@@ -2,8 +2,6 @@
 /**
  * Tools for drawing.
  * @module draw
- * @license MIT
- * @copyright 2011 Jeff Schiller
  */
 
 import Layer from './layer.js';

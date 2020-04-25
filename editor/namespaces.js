@@ -1,7 +1,6 @@
 /**
  * Namespaces or tools therefor.
  * @module namespaces
- * @license MIT
 */
 
 /**

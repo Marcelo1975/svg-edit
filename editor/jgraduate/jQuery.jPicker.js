@@ -1,30 +1,5 @@
 /* eslint-disable no-bitwise */
-/**
- * @file jPicker (Adapted from version 1.1.6)
- *
- * jQuery Plugin for Photoshop style color picker
- *
- * @module jPicker
- * @copyright (c) 2010 Christopher T. Tillman
- * Digital Magic Productions, Inc. ({@link http://www.digitalmagicpro.com/})
- * FREE to use, alter, copy, sell, and especially ENHANCE
- * @license MIT
- *
- * Painstakingly ported from John Dyers' excellent work on his own color picker based on the Prototype framework.
- *
- * John Dyers' website: {@link http://johndyer.name}
- * Color Picker page: {@link http://johndyer.name/photoshop-like-javascript-color-picker/}
- */
 
-/**
-* @external Math
-*/
-/**
-* @memberof external:Math
-* @param {Float} value
-* @param {Float} precision
-* @returns {Float}
-*/
 function toFixedNumeric (value, precision) {
   if (precision === undefined) precision = 0;
   return Math.round(value * (10 ** precision)) / (10 ** precision);

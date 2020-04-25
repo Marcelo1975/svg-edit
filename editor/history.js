@@ -1,8 +1,6 @@
 /**
  * For command history tracking and undo functionality.
  * @module history
- * @license MIT
- * @copyright 2010 Jeff Schiller
  */
 
 import {getHref, setHref, getRotationAngle, isNullish} from './utilities.js';

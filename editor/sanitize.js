@@ -1,11 +1,3 @@
-/**
- * Tools for SVG sanitization.
- * @module sanitize
- * @license MIT
- *
- * @copyright 2010 Alexis Deveria, 2010 Jeff Schiller
- */
-
 import {getReverseNS, NS} from './namespaces.js';
 import {isGecko} from './browser.js';
 import {getHref, setHref, getUrlFromAttr} from './utilities.js';

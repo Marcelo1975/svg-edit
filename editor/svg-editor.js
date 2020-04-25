@@ -1,14 +1,5 @@
 /* globals jQuery */
 /**
-* The main module for the visual SVG Editor.
-*
-* @license MIT
-*
-* @copyright 2010 Alexis Deveria
-* 2010 Pavol Rusnak
-* 2010 Jeff Schiller
-* 2010 Narendra Sisodiya
-* 2014 Brett Zamir
 * @exports module:SVGEditor
 * @borrows module:locale.putLocale as putLocale
 * @borrows module:locale.readLang as readLang

@@ -1,12 +1,3 @@
-/* globals jQuery */
-/**
- * DOM element selection box tools.
- * @module select
- * @license MIT
- *
- * @copyright 2010 Alexis Deveria, 2010 Jeff Schiller
- */
-
 import {isTouch, isWebkit} from './browser.js'; // , isOpera
 import {getRotationAngle, getBBox, getStrokedBBox, isNullish} from './utilities.js';
 import {transformListToTransform, transformBox, transformPoint} from './math.js';

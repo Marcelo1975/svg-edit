@@ -25,6 +25,22 @@ html, body, div{
   color: #000000;
 }
 
+#ruler_corner {
+  display: none;
+}
+
+#ruler_x {
+  display: none;
+}
+
+#ruler_y {
+  display: none;
+}
+
+#sidepanels {
+  display: none;
+}
+
 a {
   color: #19c;
 }
@@ -1295,6 +1311,10 @@ ul li.current {
   display: none;
 }
 
+#tool_zoom {
+  display: none;
+}
+
 .toolbar_button button .svg_icon {
   margin: 0 3px -3px 0 !important;
   padding: 0;
@@ -1304,6 +1324,22 @@ ul li.current {
 }
 
 #dialog_box {
+  display: none;
+}
+
+#tool_image {
+  display: none;
+}
+
+#tool_path {
+  display: none;
+}
+
+#tools_line_show {
+  display: none;
+}
+
+#tool_fhpath {
   display: none;
 }
 

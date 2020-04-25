@@ -1,10 +1,3 @@
-/**
- * @file ext-star.js
- *
- *
- * @copyright 2010 CloudCanvas, Inc. All rights reserved
- *
- */
 export default {
   name: 'star',
   async init (S) {

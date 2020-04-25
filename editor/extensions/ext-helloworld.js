@@ -1,13 +1,4 @@
 /**
- * @file ext-helloworld.js
- *
- * @license MIT
- *
- * @copyright 2010 Alexis Deveria
- *
- */
-
-/**
 * This is a very basic SVG-Edit extension. It adds a "Hello World" button in
 *  the left ("mode") panel. Clicking on the button, and then the canvas
 *  will show the user the point on the canvas that was clicked on.

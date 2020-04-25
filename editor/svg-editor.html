@@ -44,7 +44,6 @@
     <title>Editor → SVG</title>
 </head>
 <body>
-
 <div id="svg_container" style="visibility: hidden;">
 <div id="svg_editor" role="main">
   <div id="rulers">
@@ -64,6 +63,7 @@
     <div id="svgcanvas" style="position: relative;">
     </div>
   </div>
+  <!--
   <div id="sidepanels">
     <div id="layerpanel">
       <h3 id="layersLabel">Layers</h3>
@@ -90,7 +90,7 @@
     <div id="sidepanel_handle"
       title="Drag left/right to resize side panel [X]">L a y e r s
     </div>
-  </div>
+  </div>-->
   <div id="main_button">
     <div id="main_icon" class="tool_button" title="Main Menu">
       <span>Edite-SVG</span>
@@ -350,7 +350,7 @@
       <div class="toolset" id="tool_font_family">
         <label>
           <!-- Font family -->
-          <input id="font_family" type="text" title="Change Font Family" size="12"/>
+          <input id="font_family" type="text" title="Change Font Family" size="14"/>
         </label>
         <div id="font_family_dropdown" class="dropdown">
           <button></button>
@@ -424,13 +424,13 @@
   </div>
   <div id="tools_left" class="tools_panel">
     <div class="tool_button" id="tool_select" title="Select Tool"></div>
-    <div class="tool_button" id="tool_fhpath" title="Pencil Tool" style="display: none;"></div>
-    <div class="tool_button" id="tool_line" style="display: none;" title="Line Tool"></div>
+    <div class="tool_button" id="tool_fhpath" title="Pencil Tool"></div>
+    <div class="tool_button" id="tool_line" title="Line Tool"></div>
     
-    <div class="tool_button" style="display: none;" id="tool_path" title="Path Tool"></div>
+    <div class="tool_button" id="tool_path" title="Path Tool"></div>
     <div class="tool_button" id="tool_text" title="Text Tool"></div>
-    <div class="tool_button" style="display: none;" id="tool_image" title="Image Tool"></div>
-    <div class="tool_button" style="display: none;" id="tool_zoom" title="Zoom Tool [Ctrl+Up/Down]"></div>
+    <div class="tool_button" id="tool_image" title="Image Tool"></div>
+    <div class="tool_button" id="tool_zoom" title="Zoom Tool [Ctrl+Up/Down]"></div>
     <div style="display: none;">
       <div id="tool_rect" title="Rectangle"></div>
       <div id="tool_square" title="Square"></div>

@@ -2,7 +2,6 @@
 /**
  * Manipulating coordinates.
  * @module coords
- * @license MIT
  */
 
 import './svgpathseg.js';

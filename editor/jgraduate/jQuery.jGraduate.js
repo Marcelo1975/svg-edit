@@ -1,33 +1,3 @@
-/**
- * @file jGraduate 0.4
- *
- * jQuery Plugin for a gradient picker
- *
- * @module jGraduate
- * @copyright 2010 Jeff Schiller {@link http://blog.codedread.com/}, 2010 Alexis Deveria {@link http://a.deveria.com/}
- *
- * @license Apache-2.0
- * @example
- * // The Paint object is described below.
- * $.jGraduate.Paint(); // constructs a 'none' color
- * @example $.jGraduate.Paint({copy: o}); // creates a copy of the paint o
- * @example $.jGraduate.Paint({hex: '#rrggbb'}); // creates a solid color paint with hex = "#rrggbb"
- * @example $.jGraduate.Paint({linearGradient: o, a: 50}); // creates a linear gradient paint with opacity=0.5
- * @example $.jGraduate.Paint({radialGradient: o, a: 7}); // creates a radial gradient paint with opacity=0.07
- * @example $.jGraduate.Paint({hex: '#rrggbb', linearGradient: o}); // throws an exception?
-*/
-
-/* eslint-disable jsdoc/require-property */
-/**
-  * The jQuery namespace.
-  * @external jQuery
-*/
-/**
- * The jQuery plugin namespace.
- * @namespace {PlainObject} fn
- * @memberof external:jQuery
- * @see {@link http://learn.jquery.com/plugins/|jQuery Plugins}
- */
 /* eslint-enable jsdoc/require-property */
 
 const ns = {

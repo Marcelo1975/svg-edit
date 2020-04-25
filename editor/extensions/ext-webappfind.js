@@ -1,11 +1,3 @@
-/**
-* Depends on Firefox add-on and executables from
-* {@link https://github.com/brettz9/webappfind}.
-* @author Brett Zamir
-* @license MIT
-* @todo See WebAppFind Readme for SVG-related todos
-*/
-
 export default {
   name: 'webappfind',
   async init ({importLocale, $}) {

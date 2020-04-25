@@ -1,12 +1,3 @@
-/**
- * @file ext-grid.js
- *
- * @license Apache-2.0
- *
- * @copyright 2010 Redou Mine, 2010 Alexis Deveria
- *
- */
-
 export default {
   name: 'grid',
   async init ({$, NS, getTypeMap, importLocale}) {

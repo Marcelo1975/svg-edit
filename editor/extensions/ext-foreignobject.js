@@ -1,12 +1,3 @@
-/**
- * @file ext-foreignobject.js
- *
- * @license Apache-2.0
- *
- * @copyright 2010 Jacques Distler, 2010 Alexis Deveria
- *
- */
-
 export default {
   name: 'foreignobject',
   async init (S) {

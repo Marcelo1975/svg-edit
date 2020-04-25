@@ -1,9 +1,4 @@
 /* globals jQuery */
-/**
- * Recalculate.
- * @module recalculate
- * @license MIT
- */
 
 import jQueryPluginSVG from './jQuery.attr.js'; // Needed for SVG attribute setting and array form with `attr`
 import {NS} from './namespaces.js';

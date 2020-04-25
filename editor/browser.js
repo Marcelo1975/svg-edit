@@ -2,9 +2,6 @@
 /**
  * Browser detection.
  * @module browser
- * @license MIT
- *
- * @copyright 2010 Jeff Schiller, 2010 Alexis Deveria
  */
 
 // Dependencies:

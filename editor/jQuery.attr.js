@@ -1,7 +1,6 @@
 /**
  * A jQuery module to work with SVG attributes.
  * @module jQueryAttr
- * @license MIT
  */
 
 /**

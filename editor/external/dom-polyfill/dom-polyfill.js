@@ -1,15 +1,3 @@
-// From https://github.com/inexorabletash/polyfill/blob/master/dom.js
-
-/**
- * @module DOMPolyfill
- */
-
-/**
- *
- * @param {Node} o
- * @param {module:DOMPolyfill~ParentNode|module:DOMPolyfill~ChildNode} ps
- * @returns {void}
- */
 function mixin (o, ps) {
   if (!o) return;
   Object.keys(ps).forEach((p) => {

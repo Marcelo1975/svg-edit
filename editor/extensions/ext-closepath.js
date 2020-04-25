@@ -1,11 +1,3 @@
-/**
- * @file ext-closepath.js
- *
- * @license MIT
- *
- * @copyright 2010 Jeff Schiller
- *
- */
 import '../svgpathseg.js';
 
 // This extension adds a simple button to the contextual panel for paths

@@ -1,12 +1,3 @@
-/**
- * Partial polyfill of `SVGTransformList`
- * @module SVGTransformList
- *
- * @license MIT
- *
- * @copyright 2010 Alexis Deveria, 2010 Jeff Schiller
- */
-
 import {NS} from './namespaces.js';
 import {supportsNativeTransformLists} from './browser.js';
 

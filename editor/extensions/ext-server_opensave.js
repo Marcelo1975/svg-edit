@@ -1,11 +1,3 @@
-/**
- * @file ext-server_opensave.js
- *
- * @license MIT
- *
- * @copyright 2010 Alexis Deveria
- *
- */
 import {canvg} from '../canvg/canvg.js';
 
 export default {

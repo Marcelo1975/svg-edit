@@ -1,14 +1,5 @@
 /* eslint-disable indent, unicorn/no-fn-reference-in-iterator */
 /* globals jQuery, jsPDF */
-/**
- * Numerous tools for working with the editor's "canvas".
- * @module svgcanvas
- *
- * @license MIT
- *
- * @copyright 2010 Alexis Deveria, 2010 Pavol Rusnak, 2010 Jeff Schiller
- *
- */
 
 /* Dependencies:
 1. Also expects jQuery UI for `svgCanvasToString` and

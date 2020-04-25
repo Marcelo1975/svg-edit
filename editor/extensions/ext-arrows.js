@@ -1,11 +1,4 @@
-/**
- * @file ext-arrows.js
- *
- * @license MIT
- *
- * @copyright 2010 Alexis Deveria
- *
- */
+
 export default {
   name: 'arrows',
   async init (S) {

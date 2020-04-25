@@ -1,11 +1,3 @@
-/**
- * @file ext-shapes.js
- *
- * @license MIT
- *
- * @copyright 2010 Christian Tzurcanu, 2010 Alexis Deveria
- *
- */
 export default {
   name: 'shapes',
   async init ({$, importLocale}) {

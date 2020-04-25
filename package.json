@@ -13,8 +13,6 @@
     "node": ">=8.5.0"
   },
   "scripts": {
-    "add-release": "git submodule add --depth=1 -b \"release-v$VERSION\" https://github.com/Marcelo1975/svg-edit \"releases/svg-edit-$VERSION\"",
-    "add-new-release": "npm run add-release && git config --file=.gitmodules submodule.releases/latest.branch \"release-v$VERSION\"",
     "submodules": "run-s submodules-init submodules-update",
     "submodules-init": "echo \"Performing non-recursive init as don't want submodules to have their own releases!\" && git submodule update --init",
     "submodules-update": "echo \"Performing non-recursive fetch as don't want submodules to have their own releases!\" git submodule foreach git fetch && git submodule update --remote",
@@ -117,9 +115,9 @@
   ],
   "license": "(MIT AND Apache-2.0 AND CC-BY-SA-2.0 AND ISC AND LGPL-3.0-or-later AND X11)",
   "bugs": {
-    "url": "https://github.com/Marcelo1975/svg-edit/issues"
+    "url": "https://marcelo1975.github.io/svg-edit/editor/svg-editor.html"
   },
-  "homepage": "https://github.com/Marcelo1975/svg-edit#readme",
+  "homepage": "https://marcelo1975.github.io/svg-edit/editor/svg-editor.html",
   "browserslist": [
     "cover 100%",
     "last 3 Chrome versions",
@@ -159,7 +157,6 @@
     "cypress": "^4.3.0",
     "cypress-axe": "^0.8.1",
     "cypress-multi-reporters": "^1.2.4",
-    "deparam": "git+https://github.com/brettz9/deparam.git#updates",
     "eslint": "^6.8.0",
     "eslint-config-ash-nazg": "^18.0.0",
     "eslint-config-standard": "^14.1.1",
@@ -200,8 +197,6 @@
     "nyc": "^15.0.0",
     "open-cli": "^6.0.1",
     "promise-fs": "^2.1.1",
-    "qr-manipulation": "git+https://github.com/brettz9/qr-manipulation.git",
-    "query-result": "git+https://github.com/WebReflection/query-result.git",
     "regenerator-runtime": "^0.13.5",
     "remark-cli": "^8.0.0",
     "remark-lint-ordered-list-marker-value": "^2.0.0",

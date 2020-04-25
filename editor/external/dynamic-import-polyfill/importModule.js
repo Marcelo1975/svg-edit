@@ -1,15 +1,3 @@
-/* eslint-disable jsdoc/require-file-overview */
-/**
- * Adapted from {@link https://github.com/uupaa/dynamic-import-polyfill/blob/master/importModule.js}.
- * @module importModule
- * @license MIT
- */
-
-/**
- * Converts a possible relative URL into an absolute one.
- * @param {string} url
- * @returns {string}
- */
 function toAbsoluteURL (url) {
   const a = document.createElement('a');
   a.setAttribute('href', url); // <a href="hoge.html">

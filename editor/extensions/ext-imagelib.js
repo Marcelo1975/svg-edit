@@ -1,11 +1,3 @@
-/**
- * @file ext-imagelib.js
- *
- * @license MIT
- *
- * @copyright 2010 Alexis Deveria
- *
- */
 export default {
   name: 'imagelib',
   async init ({$, decode64, importLocale, dropXMLInternalSubset}) {

@@ -1,13 +1,3 @@
-/* globals MathJax */
-/**
- * @file ext-mathjax.js
- *
- * @license MIT
- *
- * @copyright 2013 Jo Segaert
- *
- */
-// Todo: Wait for Mathjax 3.0 to get ES Module/avoid global
 import {importScript} from '../external/dynamic-import-polyfill/importModule.js';
 
 export default {

@@ -1,11 +1,3 @@
-/**
- * @file ext-overview_window.js
- *
- * @license MIT
- *
- * @copyright 2013 James Sacksteder
- *
- */
 export default {
   name: 'overview_window',
   init ({$, isChrome, isIE}) {

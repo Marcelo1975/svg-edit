@@ -1,11 +1,3 @@
-/**
- * Created by alexey2baranov on 28.01.17.
- */
-/*
- An extraction of the deparam method from Ben Alman's jQuery BBQ
- http://benalman.com/projects/jquery-bbq-plugin/
- */
-
 const coerce_types = {'true': !0, 'false': !1, 'null': null};
 
 function deparam (params, coerce) {

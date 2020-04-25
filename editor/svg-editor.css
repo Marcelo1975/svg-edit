@@ -1275,6 +1275,26 @@ ul li.current {
   border-top: 1px solid #663300;
 }
 
+#tools_shapelib_show {
+  display: none;
+}
+
+#tool_eyedropper {
+  display: none;
+}
+
+#tool_star {
+  display: none;
+}
+
+#tool_polygon {
+  display: none;
+}
+
+#ext-panning {
+  display: none;
+}
+
 .toolbar_button button .svg_icon {
   margin: 0 3px -3px 0 !important;
   padding: 0;

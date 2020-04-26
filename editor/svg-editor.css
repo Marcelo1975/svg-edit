@@ -10,6 +10,7 @@ html, body, div{
   user-select: text;
   /* this will work for QtWebKit in future */
   -webkit-user-drag: text;
+  background-color: #fff;
 }
 
 #svg_editor * {
@@ -65,19 +66,19 @@ select {
 #svgcanvas {
   line-height: normal;
   display: inline-block;
-  background-color: #A0A0A0;
+  /*background-color: #A0A0A0;*/
   text-align: center;
   vertical-align: middle;
-  width: 640px;
+  width: 640pxd;
   height: 480px;
   -apple-dashboard-region:dashboard-region(control rectangle 0px 0px 0px 0px); /* for widget regions that shouldn't react to dragging */
   position: relative;
   /*
     A subtle gradient effect in the canvas.
     Just experimenting - not sure if this is worth it.
-  */
+  
   background: -moz-radial-gradient(45deg,#bbb,#222);
-  background: -webkit-gradient(radial, center center, 3, center center, 1000, from(#bbb), to(#222));
+  background: -webkit-gradient(radial, center center, 3, center center, 1000, from(#bbb), to(#222));*/
 }
 
 /* Rulers
@@ -369,6 +370,7 @@ div.palette_item:first-child {
   left: -2px;
   width: 95px;
   line-height: 26px;
+  background-color: #fff;
 }
 
 #main_icon:hover {
@@ -412,9 +414,10 @@ div.palette_item:first-child {
   display: block;
   z-index: 2;
   font-weight: bold;
-  padding-left: 34px;
+  /*padding-left: 34px;*/
   line-height: 32px;
   font-family: sans-serif;
+  font-size: 16px;
 }
 
 #main_menu {
@@ -438,6 +441,7 @@ div.palette_item:first-child {
   list-style: none;
   margin: 0;
   padding: 0;
+  background-color: #fff;
 }
 
 #main_menu li {

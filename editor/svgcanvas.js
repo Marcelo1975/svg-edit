@@ -192,7 +192,7 @@ const clearSvgContentElement = canvas.clearSvgContentElement = function () {
   }).appendTo(svgroot);
 
   // TODO: make this string optional and set by the client
-  const comment = svgdoc.createComment(' Created with SVG-edit - https://github.com/SVG-Edit/svgedit');
+  const comment = svgdoc.createComment(' Created with SVG-edit - https://marcelo1975.github.io/svg-edit/editor/svg-editor.html');
   svgcontent.append(comment);
 };
 clearSvgContentElement();
@@ -943,7 +943,7 @@ const encodableImages = {},
 
 let
   // String with image URL of last loadable image
-  lastGoodImgUrl = curConfig.imgPath + 'logo.png',
+  lastGoodImgUrl = curConfig.imgPath + 'icone.png',
 
   // Boolean indicating whether or not a draw action has been started
   started = false,

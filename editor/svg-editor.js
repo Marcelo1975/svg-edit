@@ -49,13 +49,13 @@ if (!$.loadingStylesheets) {
 }
 */
 
-const homePage = 'https://github.com/SVG-Edit/svgedit';
+const homePage = 'https://marcelo1975.github.io/svg-edit/editor/svg-editor.html';
 
 const stylesheet = 'svg-editor.css';
 if (!$.loadingStylesheets.includes(stylesheet)) {
   $.loadingStylesheets.push(stylesheet);
 }
-const favicon = 'images/logo.png';
+const favicon = 'images/icone.png';
 if ($.loadingStylesheets.some((item) => {
   return !Array.isArray(item) || item[0] !== favicon;
 })) {

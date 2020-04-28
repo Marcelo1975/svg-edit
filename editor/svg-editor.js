@@ -49,7 +49,7 @@ if (!$.loadingStylesheets) {
 }
 */
 
-const homePage = 'https://marcelo1975.github.io/svg-edit/editor/svg-editor.html';
+const homePage = 'https://m18web.com.br';
 
 const stylesheet = 'svg-editor.css';
 if (!$.loadingStylesheets.includes(stylesheet)) {

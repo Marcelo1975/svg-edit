@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500&family=Lato:ital,wght@1,300&family=Manrope:wght@800&family=Merriweather:ital@1&family=Montserrat:ital,wght@1,300&family=Noto+Sans&family=Noto+Sans+JP:wght@700&family=Open+Sans:ital@1&family=Oswald:wght@700&family=Poppins:wght@300&family=Raleway:ital@1&family=Roboto+Condensed&family=Roboto:ital,wght@1,100;1,900&family=Ubuntu:ital@1&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Aclonica&family=Acme&family=Amatic+SC&family=Architects+Daughter&family=Bad+Script&family=Bahianita&family=Bangers&family=Bree+Serif&family=Bungee+Inline&family=Cabin+Sketch:wght@700&family=Caveat&family=Cookie&family=Courgette&family=Dancing+Script&family=Freckle+Face&family=Fredericka+the+Great&family=Fredoka+One&family=Frijole&family=Girassol&family=Gloria+Hallelujah&family=Gochi+Hand&family=Great+Vibes&family=Herr+Von+Muellerhoff&family=Homemade+Apple&family=Indie+Flower&family=Italianno&family=Kalam&family=Kaushan+Script&family=Kumar+One+Outline&family=Lobster&family=Lobster+Two&family=Long+Cang&family=Luckiest+Guy&family=Marck+Script&family=Monoton&family=Orbitron:wght@900&family=Pacifico&family=Parisienne&family=Patrick+Hand&family=Paytone+One&family=Permanent+Marker&family=Pinyon+Script&family=Playball&family=Poiret+One&family=Press+Start+2P&family=Raleway+Dots&family=Righteous&family=Rock+Salt&family=Rye&family=Sacramento&family=Satisfy&family=Shadows+Into+Light&family=Sigmar+One&family=Signika&family=Six+Caps&family=Tangerine:wght@700&family=Ultra&family=Viga&family=Yellowtail&display=swap');
+
 body {
   background: #D0D0D0;
   font-family: 'Roboto', sans-serif;
@@ -15,6 +18,67 @@ body {
   font-family: 'Noto Sans', sans-serif;
   font-family: 'Merriweather', serif;
   font-family: 'Ubuntu', sans-serif;
+
+  font-family: 'Bangers', cursive;
+  font-family: 'Girassol', cursive;
+  font-family: 'Lobster', cursive;
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Indie Flower', cursive;
+  font-family: 'Pacifico', cursive;
+  font-family: 'Righteous', cursive;
+  font-family: 'Shadows Into Light', cursive;
+  font-family: 'Abril Fatface', cursive;
+  font-family: 'Bahianita', cursive;
+  font-family: 'Amatic SC', cursive;
+  font-family: 'Acme', sans-serif;
+  font-family: 'Bree Serif', serif;
+  font-family: 'Signika', sans-serif;
+  font-family: 'Fredoka One', cursive;
+  font-family: 'Caveat', cursive;
+  font-family: 'Permanent Marker', cursive;
+  font-family: 'Satisfy', cursive;
+  font-family: 'Patrick Hand', cursive;
+  font-family: 'Courgette', cursive;
+  font-family: 'Kalam', cursive;
+  font-family: 'Kaushan Script', cursive;
+  font-family: 'Lobster Two', cursive;
+  font-family: 'Great Vibes', cursive;
+  font-family: 'Viga', sans-serif;
+  font-family: 'Gochi Hand', cursive;
+  font-family: 'Sacramento', cursive;
+  font-family: 'Parisienne', cursive;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-family: 'Orbitron', sans-serif;
+  font-family: 'Cookie', cursive;
+  font-family: 'Poiret One', cursive;
+  font-family: 'Luckiest Guy', cursive;
+  font-family: 'Long Cang', cursive;
+  font-family: 'Monoton', cursive;
+  font-family: 'Ultra', serif;
+  font-family: 'Marck Script', cursive;
+  font-family: 'Press Start 2P', cursive;
+  font-family: 'Paytone One', sans-serif;
+  font-family: 'Architects Daughter', cursive;
+  font-family: 'Rock Salt', cursive;
+  font-family: 'Sigmar One', cursive;
+  font-family: 'Yellowtail', cursive;
+  font-family: 'Aclonica', sans-serif;
+  font-family: 'Playball', cursive;
+  font-family: 'Bad Script', cursive;
+  font-family: 'Homemade Apple', cursive;
+  font-family: 'Tangerine', cursive;
+  font-family: 'Pinyon Script', cursive;
+  font-family: 'Fredericka the Great', cursive;
+  font-family: 'Cabin Sketch', cursive;
+  font-family: 'Raleway Dots', cursive;
+  font-family: 'Six Caps', sans-serif;
+  font-family: 'Italianno', cursive;
+  font-family: 'Kumar One Outline', cursive;
+  font-family: 'Bungee Inline', cursive;
+  font-family: 'Frijole', cursive;
+  font-family: 'Freckle Face', cursive;
+  font-family: 'Rye', cursive;
+  font-family: 'Herr Von Muellerhoff', cursive;
 }
 
 html, body, div{
@@ -557,6 +621,10 @@ div.palette_item:first-child {
 #editor_panel, #history_panel {
   height: 34px;
   float: left;
+}
+
+.tool_sep {
+  display: none;
 }
 
 #multiselected_panel .selected_tool {

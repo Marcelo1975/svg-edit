@@ -623,6 +623,10 @@ div.palette_item:first-child {
   float: left;
 }
 
+#view_grid_1, #view_grid {
+  display: none !important;
+}
+
 .tool_sep {
   display: none;
 }

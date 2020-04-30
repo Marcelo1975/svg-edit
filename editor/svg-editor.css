@@ -744,6 +744,11 @@ span.zoom_tool {
   background-color: #B0B0B0;
 }
 
+#font_family_dropdown-list {
+  max-height: 54.5em;
+  overflow-y: auto;
+}
+
 .dropdown ul {
   list-style: none;
   position: absolute;
@@ -1114,6 +1119,98 @@ span.zoom_tool {
     padding: 0 5px;
     margin-top: 2px;
     height: 30px;
+  }
+}
+
+@media screen and (max-width:425px) {
+  .expanded #palette_holder {
+    left: 560px;
+    overflow-x: scroll;
+    padding: 0 5px;
+    margin-top: 2px;
+    height: 30px;
+  }
+  #tools_top {
+    width: 50%;
+    height: 71px;
+  }
+  #tools_bottom {
+    width: 400px;
+    margin-bottom: 20px;
+  }
+  #zoom_panel {
+    width: 100px;
+  }
+  #palette_holder {
+    width: 20rem;
+    display: block;
+    margin-right: 100px;
+  }
+  #workarea, #sidepanels {
+    top: 70px;
+  }
+  #rulers #ruler_corner,
+  #rulers #ruler_x, #tools_left {
+    top: 71px;
+  }
+
+  #rulers #ruler_y {
+    top: 86px;
+  }
+
+  #cur_context_panel {
+    top: 87px;
+  }
+
+  #selected_panel {
+    clear: right;
+  }
+}
+
+@media screen and (max-width:320px) {
+  .expanded #palette_holder {
+    left: 560px;
+    overflow-x: scroll;
+    padding: 0 5px;
+    margin-top: 2px;
+    height: 30px;
+  }
+  #tools_top {
+    width: 50%;
+    height: 71px;
+  }
+  #tools_bottom {
+    width: 300px;
+    margin-bottom: 20px;
+  }
+  #tools_bottom_2 {
+    width: 150px;
+  }
+  #zoom_panel {
+    width: 100px;
+  }
+  #palette_holder {
+    width: 20rem;
+    display: block;
+  }
+  #workarea, #sidepanels {
+    top: 70px;
+  }
+  #rulers #ruler_corner,
+  #rulers #ruler_x, #tools_left {
+    top: 71px;
+  }
+
+  #rulers #ruler_y {
+    top: 86px;
+  }
+
+  #cur_context_panel {
+    top: 87px;
+  }
+
+  #selected_panel {
+    clear: right;
   }
 }
 

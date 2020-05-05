@@ -40,6 +40,9 @@
       within the following file to svgEditor.setConfig -->
     <script defer="defer" src="../svgedit-config-iife.js"></script>
 
+    <!-- Open Tab Remove BG -->
+    <script src="removeBG.js"></script>
+
     <title>Editor → SVG</title>
 </head>
 <body>
@@ -496,6 +499,14 @@
     <div class="tool_button" id="tool_text" title="Text Tool"></div>
     <div class="tool_button" id="tool_image" title="Image Tool"></div>
     <div class="tool_button" id="tool_zoom" title="Zoom Tool [Ctrl+Up/Down]"></div>
+    
+    <img onclick="javascript:openTab('removeBG.html')" class="tool_button" id="tool_removeBG" src="images/bg-none.png" width="30" height="30" alt="Remove BG">
+
+    <script language=javascript>
+      function openTab(URL){
+        window.open(URL,"tab_1","width=600,height=350,scrollbars=NO")
+      }
+    </script>
 
     <div class="push_button tool_button" id="tool_undo"
     title="Undo [Z]"></div>

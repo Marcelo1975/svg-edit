@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Remove BG com JS</title>
+	<link rel="stylesheet" href="css/main.css">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <script src="https://kit.fontawesome.com/640a71495f.js" crossorigin="anonymous"></script>
+    <style>
+        .up{
+            padding: 10px;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 25px;
+        }
+        .box-wrapper{
+            position: relative;
+        }
+        .paragraph {
+            font-weight: bold;
+        }
+        .file{
+            position: absolute;
+            display: inline-block;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            opacity: 0;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body class="bg-dark text-white text-center">
+	<pre style="display: none;">rgba(<input type="number" value="255" max="255" min="0" step="1" id="r" maxlength="3" minlength="1" />,<input type="number" value="255" max="255" min="0" step="1" id="g" maxlength="3" minlength="1" />,<input type="number" value="255" max="255" min="0" step="1" id="b" maxlength="3" minlength="1" />,<input type="number" value="255" max="255" min="0" step="1" id="a" maxlength="3" minlength="1" />)
+	</pre>
+
+    <div class="container mt-5">
+    	<p class="paragraph">
+            "Sua imagem será baixada para sua pasta de download, tudo que precisa fazer é inserir-la novamente ao editor."
+        </p>
+    	<hr>
+	<form action="" method="post" enctype="multipart/form-data">
+	    <div class="box-wrapper">
+			<button class="btn btn-success btn-block up">
+			    <i class="fas fa-upload"></i> Carregue Sua Imagem
+			</button>
+			<input type="file" class="file" name="filefield" multiple="multiple" accept="image/*" id="fileInput" /><br />
+			<img id="imgTMP" />
+			<canvas id="theCanvas"></canvas>
+	    </div>
+	</form>
+    </div>
+
+	<style>input[type=number]{width: 3em}#theCanvas {display: none}</style>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+	<script>
+        'use_stric'
+        let fileInput = document.getElementById('fileInput'),
+            theCANVAS = document.getElementById('theCanvas'),
+            theCANVASctx = theCANVAS.getContext('2d'),
+            imgTMP = document.getElementById('imgTMP'),
+            rComponent = document.getElementById('r'),
+            gComponent = document.getElementById('g'),
+            bComponent = document.getElementById('b'),
+            aComponent = document.getElementById('a'),
+            transColor = "rgba(255, 255, 255, 1)",
+            transCode = 0xffffffff;
+
+        let makeColorTransparent = function(canvasContext, transparentID, width, height) {
+            // where all the magic happens
+            let theImageData = canvasContext.getImageData(0, 0, width, height),
+                theImageDataBufferTMP = new ArrayBuffer(theImageData.data.length),
+                theImageDataClamped8TMP = new Uint8ClampedArray(theImageDataBufferTMP),
+                theImageDataUint32TMP = new Uint32Array(theImageDataBufferTMP),
+                n = theImageDataUint32TMP.length;
+                theImageDataClamped8TMP.set(theImageData.data);
+
+                pix = theImageData.data,
+                newColor = {r:0,g:0,b:0, a:0};
+
+                for (i = 0, n = pix.length; i < n; i += 4) {
+                    var r = pix[i],
+                        g = pix[i+1],
+                        b = pix[i+2];
+
+                    // If its white or close then change it
+                    if(r >=230 && g >= 230 && b >= 230){ 
+                        // Change the white to whatever.
+                        pix[i] = newColor.r;
+                        pix[i+1] = newColor.g;
+                        pix[i+2] = newColor.b;
+                        pix[i+3] = newColor.a;
+                    }
+
+                    // If its white then change it
+                    
+                    if(r == 255 && g == 255 && b == 255){ 
+                        // Change the white to whatever.
+                        pix[i] = newColor.r;
+                        pix[i+1] = newColor.g;
+                        pix[i+2] = newColor.b;
+                        pix[i+3] = newColor.a;
+                    }
+                }
+                theCANVASctx.putImageData(theImageData, 0, 0)
+        },
+        downloadCanvas = function(downloadfilename) {
+            theCanvas.toBlob(function(theIMGblob) {
+                var thedataURL = URL.createObjectURL(theIMGblob),
+                theAtagLink = document.createElement('a');
+
+                theAtagLink.download = 'alterada-' + downloadfilename;
+                document.body.appendChild(theAtagLink);
+                theAtagLink.href = thedataURL;
+                theAtagLink.click();
+            });
+        };
+
+        fileInput.onchange = function(fileevent) {
+            let efiles = fileevent.target.files,
+                localTransColor = transColor,
+                localTransCode = transCode;
+
+            let cur = efiles.length,
+                nextfile = function() {
+                if (!cur--) {
+                    imgTMP.src = '';
+                return;
+            }
+            let fr = new FileReader();
+            console.log(efiles[cur]);
+            fr.onload = function(dataevt) {
+                fr.onload = null;
+                let theArrayBuffer = dataevt.target.result,
+                theblob = new Blob([theArrayBuffer]);
+                imgTMP.src = URL.createObjectURL(theblob);
+                imgTMP.onload = function() {
+                    imgTMP.onload = null;
+                    let theImagesWidth = imgTMP.naturalWidth,
+                    theImagesHeight = imgTMP.naturalHeight;
+
+                    theCANVAS.width = theImagesWidth;
+                    theCANVAS.height = theImagesHeight;
+
+                    theCANVASctx.fillStyle = localTransColor;
+                    theCANVASctx.clearRect(
+                        0,
+                        0,
+                        theImagesWidth,
+                        theImagesHeight
+                    );
+                    theCANVASctx.drawImage(imgTMP, 0, 0);
+                    makeColorTransparent(
+                        theCANVASctx,
+                        localTransCode,
+                        theImagesWidth,
+                        theImagesHeight
+                    );
+
+                    //now, download the file:
+                    downloadCanvas(efiles[cur].name);
+
+                    //Finally, procced to proccess the next file
+                    nextfile();
+                };
+            };
+                fr.readAsArrayBuffer(efiles[cur]);
+            };
+            nextfile();
+        }
+
+        rComponent.oninput = gComponent.oninput =
+        bComponent.oninput = aComponent.oninput =
+        function() {
+            rComponent.value = Math.max(0, Math.min(rComponent.value, 255));
+            gComponent.value = Math.max(0, Math.min(gComponent.value, 255));
+            bComponent.value = Math.max(0, Math.min(bComponent.value, 255));
+            aComponent.value = Math.max(0, Math.min(aComponent.value, 255));
+        };
+
+        rComponent.onchange = gComponent.onchange =
+        bComponent.onchange = aComponent.onchange =
+        function() {
+            transColor = 'rgba(' +
+            rComponent.value + ',' +
+            gComponent.value + ',' +
+            bComponent.value + ',' +
+            aComponent.value / 255 + ',' +
+        ')';
+        // numberical equivelent of the rgba
+        transCode =
+            rComponent.value * 0x00000001 +
+            gComponent.value * 0x00000100 +
+            bComponent.value * 0x00010000 +
+            aComponent.value * 0x01000000;
+        };
+    </script>
+</body>
+</html>

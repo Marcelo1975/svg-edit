@@ -356,7 +356,7 @@
 
     if (changedTouches.length < 2) {
       first.target.dispatchEvent(simulatedEvent);
-      ev.preventDefault();
+      //ev.preventDefault();
     }
   }
 

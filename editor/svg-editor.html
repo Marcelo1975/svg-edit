@@ -40,10 +40,29 @@
       within the following file to svgEditor.setConfig -->
     <script defer="defer" src="../svgedit-config-iife.js"></script>
 
-    <!-- Open Tab Remove BG -->
-    <script src="removeBG.js"></script>
-
     <title>Editor → SVG</title>
+
+    <!-- jQuery/jQueryUI (hosted) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.24/jquery-ui.js"></script>
+    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.24/themes/ui-lightness/jquery-ui.css" rel="stylesheet" type="text/css"/>
+
+    <!-- Markdown parser -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pagedown/1.0/Markdown.Converter.min.js"></script>
+
+    <!-- Prettyprint -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.css" rel="stylesheet" type="text/css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.js"></script>    
+
+    <!-- Plugin -->
+    <script src="jquery.colorpicker.js"></script>
+    <link href="jquery.colorpicker.css" rel="stylesheet" type="text/css"/>
+
+    <!-- Plugin extensions -->
+    <script src="i18n/jquery.ui.colorpicker-nl.js"></script>
+    <script src="parts/jquery.ui.colorpicker-rgbslider.js"></script>
+    <script src="parts/jquery.ui.colorpicker-memory.js"></script>
+    <!-- End Jquery -->
 </head>
 <body>
 <div id="svg_container" style="visibility: hidden;">
@@ -554,9 +573,24 @@
           <label class="icon_label" for="fill_color" title="Change fill color"></label>
           <div class="color_block">
             <div id="fill_bg"></div>
-            <div id="fill_color" class="color_block">
-              <input type="color" cmky>
+
+            <div class="color_block" style="text-align: center;">
+              <input type="hidden" id="colorpicker-full" value="fe9810"/>
+
+            <script id="fill_color" class="prettyprint">
+              $(function() {
+                $('#colorpicker-full').colorpicker({
+                  parts:      'full',
+                  alpha:      true,
+                  showOn:     'both',
+                  buttonColorize: true,
+                  showNoneButton: true
+                });
+              });
+            </script>
             </div>
+
+            <!-- <div id="fill_color" class="color_block"></div> -->
           </div>
         </div>
         <div class="color_tool" id="tool_stroke">

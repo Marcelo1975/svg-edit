@@ -5214,7 +5214,6 @@ editor.init = function () {
     }
   }
   PaintBox.ctr = 0;
-
   paintBox.fill = new PaintBox('#fill_color', 'fill');
   paintBox.stroke = new PaintBox('#stroke_color', 'stroke');
 
@@ -5261,7 +5260,6 @@ editor.init = function () {
       }
     });
   }, 1000);
-
   $('#fill_color, #tool_fill .icon_label').click(function () {
     colorPicker($('#fill_color'));
     updateToolButtonState();

@@ -573,26 +573,30 @@
           <label class="icon_label" for="fill_color" title="Change fill color"></label>
           <div class="color_block">
             <div id="fill_bg"></div>
-
-            <div class="color_block" style="text-align: center;">
-              <input type="hidden" id="colorpicker-full" value="fe9810"/>
-
-            <script id="fill_color" class="prettyprint">
-              $(function() {
-                $('#colorpicker-full').colorpicker({
-                  parts:      'full',
-                  alpha:      true,
-                  showOn:     'both',
-                  buttonColorize: true,
-                  showNoneButton: true
-                });
-              });
-            </script>
-            </div>
-
-            <!-- <div id="fill_color" class="color_block"></div> -->
+            <div id="fill_color" class="color_block"></div> 
           </div>
         </div>
+
+        <!-- Palleta CMYK -->
+        <!--
+        <div class="color_block" style="text-align: center;">
+          <input type="hidden" id="colorpicker-full" value="fe9810"/>
+        </div>
+        <script id="fill_color" class="prettyprint">
+          $(function() {
+            $('#colorpicker-full').colorpicker({
+              parts:      'full',
+              alpha:      true,
+              showOn:     'both',
+              buttonColorize: true,
+              showNoneButton: true
+            });
+          });
+        </script>
+        -->
+        <!-- End palleta cmyk -->
+
+
         <div class="color_tool" id="tool_stroke">
           <label class="icon_label" title="Change stroke color"></label>
           <div class="color_block">

@@ -115,6 +115,7 @@ export default {
     no_embed: 'NOTE: This image cannot be embedded. It will depend on this path to be displayed',
     undo: 'Undo [Z]',
     redo: 'Redo [Y]',
+    remove_bg: 'Remove Background From Image',
     tool_source: 'Edit Source [U]',
     wireframe_mode: 'Wireframe Mode [F]',
     clone: 'Duplicate Element(s) [D]',

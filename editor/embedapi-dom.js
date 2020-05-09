@@ -92,7 +92,7 @@ function exportPDF () {
 
 const frameBase = 'https://marcelo1975.github.io/svg-edit/editor/svg-editor.html';
 // const frameBase = 'http://localhost:8001';
-const framePath = '/editor/xdomain-svg-editor-.html?extensions=ext-xdomain-messaging.js';
+const framePath = '/editor/xdomain-svg-editor.html?extensions=ext-xdomain-messaging.js';
 const iframe = $('<iframe width="900px" height="600px" id="svgedit" src="javascript:0"></iframe>');
 iframe[0].src = frameBase + framePath +
   (location.href.includes('?')

@@ -1305,6 +1305,7 @@ editor.init = function () {
 
         '#tool_undo': 'undo',
         '#tool_redo': 'redo',
+        '#tool_removeBG': 'remove_bg',
 
         '#tool_select': 'select',
         '#tool_fhpath': 'pencil',

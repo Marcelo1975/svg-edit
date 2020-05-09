@@ -192,7 +192,7 @@ const clearSvgContentElement = canvas.clearSvgContentElement = function () {
   }).appendTo(svgroot);
 
   // TODO: make this string optional and set by the client
-  const comment = svgdoc.createComment(' Created with SVG-edit - https://marcelo1975.github.io/svg-edit/editor/svg-editor.html');
+  //const comment = svgdoc.createComment(' Created with SVG-edit - https://marcelo1975.github.io/svg-edit/editor/svg-editor.html');
   svgcontent.append(comment);
 };
 clearSvgContentElement();

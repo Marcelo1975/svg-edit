@@ -115,6 +115,7 @@ export default {
     no_embed: 'Atenção: Esta imagem não pode ser incorporada e dependerá de seu caminho para ser exibida',
     undo: 'Desfazer',
     redo: 'Refazer',
+    remove_bg: 'Remover Fundo Da Imagem',
     tool_source: 'Editar o código',
     wireframe_mode: 'Modo linhas',
     clone: 'Clonar Elemento(s)',
